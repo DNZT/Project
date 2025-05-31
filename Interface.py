@@ -49,7 +49,7 @@ if st.button("🚀 Run Optimization") and stok_file and order_file and distance_
 
 # Show core results
 if st.session_state.output_df is not None and st.session_state.excel_buffer is not None:
-    st.subheader("📍 Optimized Routes")
+    st.subheader("📍 Routes")
     st.dataframe(st.session_state.output_df)
 
     xls = pd.ExcelFile(st.session_state.excel_buffer)
